@@ -1,0 +1,43 @@
+{
+  "name": "mb-date",
+  "version": "1.0.5",
+  "description": "Jalali Date",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "tslint": "^6.1.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "jasmine": "^3.5.0",
+    "nyc": "^15.0.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "coverage": "nyc -r text -e .ts -x \"tests/*.spec.ts\" npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OkBayat/mb-date.git"
+  },
+  "keywords": [
+    "JDate"
+  ],
+  "author": "OkBayat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OkBayat/mb-date/issues"
+  },
+  "homepage": "https://github.com/OkBayat/mb-date#readme",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "dist/*"
+  ]
+}
