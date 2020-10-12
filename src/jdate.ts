@@ -200,6 +200,10 @@ export class JDate extends MbDate implements IInstanceDate {
         this.gDate.setMinutes(minutes);
         return this;
     }
+    setSeconds(seconds: number = null) {
+        this.gDate.setSeconds(seconds);
+        return this;
+    }
 
     /* Private */
     //D
