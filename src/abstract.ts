@@ -239,6 +239,9 @@ export class MbDate {
 
             case "hh":
                 hours = this.leadingZero(h);
+                if (hours === '00') {
+                    hours = '12';
+                }
                 break;
 
             case "H":
