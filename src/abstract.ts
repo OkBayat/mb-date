@@ -61,7 +61,7 @@ export class MbDate {
      *
      * @return {String[]} Days short names
      */
-    protected getAbbrDays(): string[] {
+    getAbbrDays(): string[] {
         return [];
     }
 
@@ -70,7 +70,7 @@ export class MbDate {
      *
      * @return {String[]} Days long names
      */
-    protected getDaysNames(): string[] {
+    getDaysNames(): string[] {
         return [];
     }
 
@@ -79,7 +79,7 @@ export class MbDate {
      *
      * @return {String[]} Month long names
      */
-    protected getMonthNames(): string[] {
+    getMonthNames(): string[] {
         return [];
     }
 
@@ -88,7 +88,7 @@ export class MbDate {
      *
      * @return {String[]} Month short names
      */
-    protected getMonthShortNames(): string[] {
+    getMonthShortNames(): string[] {
         return [];
     }
 
@@ -99,7 +99,7 @@ export class MbDate {
      * @param {number} month
      * @returns {number}
      */
-    protected firstDay(year = this.date[0], month = this.date[1]): number {
+    firstDay(year = this.date[0], month = this.date[1]): number {
         return new this.SelfClass(year, month, 1).getDay();
     }
     private leadingZero(value) {
