@@ -12,7 +12,7 @@ export class GDate extends MbDate implements IInstanceDate {
             const seperator = date.substr(4, 1);
             const arr = date.split(seperator);
 
-            this.gDate = new Date(+arr[0], +arr[1], +arr[2]);
+            this.gDate = new Date(+arr[0], +arr[1]-1, +arr[2]);
         } else if (typeof date === "number") {
             this.gDate = new Date(date);
         } else {
